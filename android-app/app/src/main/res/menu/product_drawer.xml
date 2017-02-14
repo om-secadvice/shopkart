@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/my_orders"
+            android:title="MyOrders" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mens_clothing"
+            android:title="Mens Clothing" />
+        <item
+            android:id="@+id/womens_clothing"
+            android:title="Womens Clothing" />
+        <item
+            android:id="@+id/kids_clothing"
+            android:title="Kids Clothing" />
+        <item
+            android:id="@+id/mobiles"
+            android:title="Mobiles" />
+        <item
+            android:id="@+id/laptops"
+            android:title="Laptops" />
+        <item
+            android:id="@+id/electronics"
+            android:title="Electronic Accessories" />
+        <item
+            android:id="@+id/food"
+            android:title="Food" />
+        <item
+            android:id="@+id/games"
+            android:title="Games and Toys" />
+    </group>
+</menu>

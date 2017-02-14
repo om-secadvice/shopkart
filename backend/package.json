@@ -1,0 +1,19 @@
+{
+  "name": "android-app-shopcart",
+  "version": "0.1.0",
+  "description": "Shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hariom",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nodemailer": "^3.0.2",
+    "pg": "^6.1.0",
+    "pg-transaction": "^1.0.4",
+    "unique-random": "^1.0.0"
+  }
+}

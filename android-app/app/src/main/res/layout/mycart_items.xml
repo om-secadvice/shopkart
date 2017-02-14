@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="1sp"
+    android:layout_marginBottom="5sp">
+
+
+    <TextView
+        android:text="Productname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mycartProductName"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:autoText="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_weight="0.08" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.08"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_weight="0.70"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Selling Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mrp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seller"
+                android:padding="10dp"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_weight="0.30"
+            android:layout_height="135dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
+                android:id="@+id/mycartImage"
+                tools:layout_height="match_parent"
+                android:padding="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp"
+        android:id="@+id/quantityWala"
+        android:layout_height="80dp"
+        android:weightSum="1"
+        android:layout_weight="0.31">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Quantity"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:layout_weight="0.49"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textAllCaps="true"
+                android:fontFamily="serif"
+                android:textSize="24sp"
+                android:typeface="monospace"
+                android:paddingTop="5sp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView13"
+                android:layout_marginStart="22dp">
+
+                <Button
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/decrement"
+                    android:onClick="decrement"
+                    android:textSize="24sp"
+                    style="@style/Widget.AppCompat.Button.Small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mycartQuantity"
+                    android:layout_weight="1.54"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/increment"
+                    android:onClick="increment"
+                    android:textSize="24sp"
+                    style="@style/Widget.AppCompat.Button.Small" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_weight="0.09"
+        android:weightSum="1"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp">
+        <TextView
+            android:text="Out Of Stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myCartStock"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:textColor="@android:color/holo_green_light"
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingBottom="10dp" />
+
+        <Button
+            android:text="Remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="removeItem"
+            android:id="@+id/mycartRemoveButton"
+            tools:background="@drawable/backorange"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="?android:attr/colorActivatedHighlight"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
