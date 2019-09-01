@@ -2,4 +2,4 @@
 Android application for online shopping cart using Node and PostgreSQL on server 
 
 Github url:-
-https://www.github.com/hlbhariom/shopkart
+https://www.github.com/om-secadvice/shopkart
