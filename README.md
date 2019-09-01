@@ -1,5 +1,3 @@
-# shopkart
-Android application for online shopping cart using Node and PostgreSQL on server 
+# Shopkart - Onine Store
+Android application for online shopping cart using Node and PostgreSQL as backend. 
 
-Github url:-
-https://www.github.com/om-secadvice/shopkart
